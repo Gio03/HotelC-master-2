@@ -15,12 +15,10 @@ $(function(){
                 navigator.notification.alert('Todos los campos son requeridos', null, "Registro", "Instentar de nuevo");
             }
         });
+        
+        $('#regFoto').tap(function(){
+            tomarFoto();
+        });
+        //Secion de Registro FIN
     }, false);
-});
-
-    $('#regFoto').tap(function(){
-        tomarFoto();
-    });
-//Secion de Registro FIN
-},false);
 });
