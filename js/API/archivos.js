@@ -15,7 +15,7 @@ function subirFoto(foto, nom){
     ft.upload(foto, "http://10.214.94.145/pgptest.php", function(r){
         if(r.bytesSent > 0){
             alert();
-            nagator.notification.confirm("Registro Realizado Satisfactoriamente", function(btn){
+            navigator.notification.confirm("Registro Realizado Satisfactoriamente", function(btn){
                 switch(btn){
                     case 1:
                         navigator.notification.vibrate(500);
