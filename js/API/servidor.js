@@ -1,11 +1,9 @@
 function enviarDatos(nom,mail,tel,foto){
-    alert(1);
     $.ajax({
         type: "POST",
         url: "http://10.214.94.145/pgptest.php",
         data: "nom=" + nom + "&mail="+ mail +"&tel="+tel
     }).done(function(msg){
-        alert(msg);
         if(msg==1){
             subirFoto(foto, nom);
         }else{
