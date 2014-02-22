@@ -13,7 +13,7 @@ function subirFoto(foto, nom){
 
     var ft = new FileTransfer();
     ft.upload(foto, "http://10.214.94.145/pgptest.php", function(r){
-        if(r.response == 1){
+        if(r.bytesSent > 0){
             alert();
             nagator.notification.confirm("Registro Realizado Satisfactoriamente", function(btn){
                 switch(btn){
