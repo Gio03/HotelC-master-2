@@ -33,3 +33,7 @@ function subirFoto(foto, nom){
         }
     }, fail, options);
 }
+
+function fail(){
+    alert("error");
+}
