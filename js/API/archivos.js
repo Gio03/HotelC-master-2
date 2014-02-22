@@ -1,5 +1,4 @@
 function subirFoto(foto, nom){
-    alert(1);
     var options = new FileUploadOptions();
     options.fileKey="archivo";
     options.fileName="foto01-Carlos";
@@ -14,7 +13,6 @@ function subirFoto(foto, nom){
 
     var ft = new FileTransfer();
     ft.upload(foto, "http://10.214.94.145/pgptest.php", function(r){
-        alert(r.response);
         if(r.response == 1){
             nagator.notification.confirm("Registro Realizado Satisfactoriamente", function(btn){
                 switch(btn){
