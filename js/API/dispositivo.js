@@ -1,20 +1,21 @@
 function infoDispositivo(p){
     switch(p){
         case 'nombre':
-                        return device.name;
-                        break;
+            return device.name;
+            break;
         case 'phonegap':
-                        return device.cordova;
-                        break;
+            return device.cordova;
+            break;
         case 'plataforma':
-                        return device.platform;
-                        break;
+            return device.platform;
+            break;
         case 'id':
-                        return device.id; 
-                        break;
+            return device.uuid;
+            break;
         case 'version':
-                        return device.model;
-                        
+            return device.version;
+            break;
+        case 'modelo':
+            return device.model;
     }
-
 }
