@@ -1,4 +1,5 @@
 function subirFoto(foto, nom){
+    alert(2);
     var options = new FileUploadOptions();
     options.fileKey="archivo";
     options.fileName="foto01-Carlos";
@@ -12,7 +13,7 @@ function subirFoto(foto, nom){
     options.params = params;
 
     var ft = new FileTransfer();
-    ft.upload(foto, "http://igitsoft.com/pgtest.php", function(r){
+    ft.upload(foto, "http://10.214.94.145/pgptest.php", function(r){
         if(r.response == 1){
             nagator.notification.confirm("Registro Realizado Satisfactoriamente", function(btn){
                 switch(btn){
